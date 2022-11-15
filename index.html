@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" >
+    <title>Formulario a</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <style>
+    
+
+    h1{
+        font: Garamond;
+        text-align: center;
+        color: #4F3AA65C;
+    }
+
+    table {
+        margin-left: 50px;
+        background-color: gray;
+        border: px solid #360067 ;
+        padding: 70px 40px;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+
+    body{
+      font: Courier New;
+      
+      background-image: url("fon.jpg");
+      color: #C0C3EE;
+      text-align: left;
+      border-bottom: #CC955A ;
+      border-radius: 15px;
+
+
+    }
+
+    input[type=text] {
+  background-color: #4F3AA65C;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border-radius: 15px;
+} 
+
+  input[type=number] {
+  background-color: #4F3AA65C;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border-radius: 15px;
+}
+
+
+  #especialidad{
+  background-color: #4F3AA65C;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border-radius: 15px;
+}
+ input[type=date] {
+  margin-left: 50px;
+  background-color: #4F3AA65C;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border-radius: 15px;
+}
+
+input[type = submit], input[type = reset] {
+            background-color: #4F3AA65C;
+            border: 2px solid #360067;
+            text-decoration: none;
+            color: #C0C3EE;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            cursor: pointer;
+            border-radius: 15px;
+}
+
+
+
+ </style>
+
+
+
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo">
+      <img src="img/t.png" class="logo" alt="Logo"> 
+    </a>
+    <nav class="nav-bar">
+        <a class="nav-bar__link" href="index/">Inicio</a>
+        <a class="nav-bar__link" href="consulta.php">Ver registros</a>
+        <a class="nav-bar__link" href="" >borrar</a>
+    </nav>
+  </header>
+
+  <h1 class="titulo">Insertar Registros</h1>
+
+  <form>
+
+    <img   src="img/pic1.jpeg" class="manuel">
+
+  <table>
+  <tr>
+     <input type="date" id="fecha" name="fecha"
+            value="2018-07-22"
+            min="2000-01-01" max="2050-12-31">
+  </tr> 
+  <tr>
+      <td>
+          Clave
+      </td>
+      <td><label for="code"></label>
+      <input type="text" name="clave" id="code"  /></td>
+  </tr>
+   <tr>
+      <td>
+          Nombres
+      </td>
+      <td><label for="secc_tipo"></label>
+      <input type="text" name="nombres" id="nombres" /></td>
+  </tr>
+   <tr>
+      <td>
+          Apellidos
+      </td>
+      <td><label for="apellidos"></label>
+      <input type="text" name="apellidos" id="apellidos" /></td>
+  </tr>
+   <tr>
+      <td>
+          Edad
+      </td>
+      <td><label for="edad"></label>
+        <input type="number" id="edad" name="edad"
+       min="1" max="99"></td>
+   </tr>
+   <tr>
+      <td>
+          Genero
+      </td>
+      <td>
+
+    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+
+    <label><input type="radio" name="genero" value="femenino" checked> Femenino</label> </td>
+
+  </tr>
+   <tr>
+      <td>
+          Espacialidad
+      </td>
+      <td><label for="espacialidad"></label>
+          <select name="especialidad" id="especialidad">
+          <option value="tec programacion">Tecnico en Programación</option>
+          <option value="Mantenimiento">Tecnico en Mantenimiento</option>
+          <option value="tec textil">Tecnico en diseño textil</option></td>
+   </tr>
+   <tr>
+      <td>
+          Pasatiempo
+      </td>
+      <td><div>
+  <div id="checkboxes1" style="display:inline-block">
+    <ul>
+     <input type="hidden" name="pleer" value=" - "> 
+      <li> <input type="checkbox" name="leer" id="leer" value="leer"> <label for="leer">Leer</label> </li>
+     <input type="hidden" name="pmusica" value=" - "> 
+      <li> <input type="checkbox" name="musica" id="musica" value="musica"> <label for="musica">Musica</label> </li>
+     <input type="hidden" name="pdeporte" value=" - "> 
+      <li> <input type="checkbox" name="deporte" id="deporte" value="deporte"> <label for="meporte">Deporte</label> </li>
+    </ul>
+  </div>
+  <div id="checkboxes2" style="display:inline-block">
+    <ul>
+     <input type="hidden" name="pbailar" value=" - "> 
+      <li> <input type="checkbox" name="bailar" id="bailar" value="bailar"> <label for="bailar">Bailar</label> </li>
+     <input type="hidden" name="pdibujar" value=" - "> 
+      <li> <input type="checkbox" name="dibujar" id="dibujar" value="dibujar"> <label for="dibujar">Dibujar</label> </li>
+     <input type="hidden" name="pvideojuegos" value=" - "> 
+      <li> <input type="checkbox" name="videojuegos" id="videojuegos" value="videojuegos"> <label for="videojuegos">Videojuegos</label> </li>
+    </ul>
+  </div>
+</div>
+  </tr>
+   
+
+      <tr>
+      <td align="center "> <input type="reset" name="Borrar" 
+          id="Borrar" value="Borrar" /></td>
+      <td align="center"> <input type="submit" name="enviar" 
+          id="enviar" value="Enviar" /></td>
+      </tr>
+
+
+  </table>
+
+  
+ 
+
+  </form>
+
+</body>
+</html>
